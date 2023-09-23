@@ -1,2 +1,2 @@
-# mongodb-api
+# mongodb-practice
 Learning MongoDB
