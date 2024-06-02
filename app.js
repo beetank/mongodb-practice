@@ -22,6 +22,11 @@ connectToDb((err) => {
 }); 
 
 
+app.get('/', (req, res) => {
+    res.status(200).json({message: "hello, world");
+}
+
+
 // routes
 app.get('/books', (req, res) => {
     // current page
