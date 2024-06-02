@@ -14,7 +14,7 @@ let db;
 connectToDb((err) => {
     if (!err) {
         app.listen('5001', () => {
-            console.log("App listening on port 5001");
+            console.log("App listening on port 5001 on dev branch");
         });
 
         db = getDb();
