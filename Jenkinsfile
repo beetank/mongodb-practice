@@ -10,7 +10,7 @@ pipeline {
                     def text = 'dummy groovy text'
                     echo text
                 }
-                nodejs(Node-20.14.0) {
+                nodejs(Node-20.14) {
                     sh 'npm install'
                 }
             }
