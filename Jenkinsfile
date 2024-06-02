@@ -6,6 +6,9 @@ pipeline {
         stage("build") {
             steps {
                 echo 'building the app...'
+                script {
+                    def text = 'application build'
+                }
             }
         }
 
