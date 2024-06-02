@@ -3,24 +3,16 @@ pipeline {
 
     stages {
 
-        stage("build") {
+        stage("run backend") {
             steps {
-                echo 'building the app...'
+                echo 'executing npm...'
                 script {
-                    def text = 'application build'
+                    def text = 'dummy groovy text'
+                    echo text
                 }
-            }
-        }
-
-        stage("test") {
-            steps {
-                echo 'testing the app...'
-            }
-        }
-
-        stage("deploy") {
-            steps {
-                echo 'deploying the app...'
+                nodejs(Node-20.14.0) {
+                    sh 'npm install'
+                }
             }
         }
 
